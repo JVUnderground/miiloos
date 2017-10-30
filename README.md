@@ -1,9 +1,17 @@
-# miiloos
-# Requerimentos
+# <b>miiloos</b>
+
+## <b>Navegação</b>
+[Requerimentos](#Requerimentos)<br>
+[Instalação (Windows)](#Instalação (Windows))<br>
+[Instalação (Linux)](#Instalação (Linux))<br>
+[Execução](#Execução)<br>
+
+
+## Requerimentos
 * Python (certifique que está no seu PATH)
 
 
-# Instalação (Windows)
+## Instalação (Windows)
 ```
 git clone https://github.com/JVUnderground/miiloos.git
 cd miiloos
@@ -15,7 +23,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-# Instalação (Linux)
+## Instalação (Linux)
 ```
 git clone https://github.com/JVUnderground/miiloos.git
 cd miiloos
@@ -27,7 +35,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-# Execução
+## Execução
 ```
 python manage.py runserver
 ```
