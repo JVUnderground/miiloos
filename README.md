@@ -4,7 +4,7 @@
 
 
 # Instalação (Windows)
-´´´
+```
 git clone https://github.com/JVUnderground/miiloos.git
 cd miiloos
 pip install virtualenv
@@ -13,10 +13,10 @@ virtualenv env
 pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
-´´´
+```
 
 # Instalação (Linux)
-´´´
+```
 git clone https://github.com/JVUnderground/miiloos.git
 cd miiloos
 pip install virtualenv
@@ -25,9 +25,9 @@ source env/bin/activate
 pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
-´´´
+```
 
 # Execução
-´´´
+```
 python manage.py runserver
-´´´
+```
