@@ -25,7 +25,7 @@ SECRET_KEY = 'kx8@g(-1&n)dy$)a%xmr(8f92cxoy=y-)a5+1352v-k-n$ktq9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphs',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -100,7 +101,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 10
+}
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
