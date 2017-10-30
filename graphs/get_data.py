@@ -12,4 +12,7 @@ for instance in prices:
     date = instance['millisUTC']
     price = instance['price']
 
-    ComedFiveMinFeed.objects.create(date=date, price=price)
+    try:
+        ComedFiveMinFeed.objects.create(date=date, price=price)
+    except:
+        pass
