@@ -1,10 +1,10 @@
 # <b>miiloos</b>
 
 ## <b>Navegação</b>
-[Requerimentos](#Requerimentos)<br>
-[Instalação (Windows)](#Instalação (Windows))<br>
-[Instalação (Linux)](#Instalação (Linux))<br>
-[Execução](#Execução)<br>
+[Requerimentos](#requerimentos)<br>
+[Instalação (Windows)](#instalação-windows)<br>
+[Instalação (Linux)](#instalação-linux)<br>
+[Execução](#execução)<br>
 
 
 ## Requerimentos
