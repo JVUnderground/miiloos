@@ -11,11 +11,11 @@ def getComedFiveMinFeed():
     prices = json.loads(result.content)
 
     for instance in prices:
-        date = instance['millisUTC']
+        millisUTC = instance['millisUTC']
         price = instance['price']
 
         try:
-            ComedFiveMinFeed.objects.create(date=date, price=price)
+            ComedFiveMinFeed.objects.create(millisUTC=millisUTC, price=price)
         except:
             pass
 
