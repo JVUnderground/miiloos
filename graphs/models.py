@@ -1,5 +1,5 @@
 from django.db import models
-from datetime import datetime
+from datetime import datetime, timezone
 
 # Create your models here.
 
@@ -9,5 +9,6 @@ class ComedFiveMinFeed(models.Model):
     price = models.FloatField()
 
     def save(self, *args, **kwargs):
-        self.date = datetime.utcfromtimestamp(int(self.millisUTC)/1000)
+        date = datetime.utcfromtimestamp(int(self.millisUTC)/1000)
+        self.date = date.replace(tzinfo=timezone.utc)
         super(ComedFiveMinFeed, self).save(*args, **kwargs)
