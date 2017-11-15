@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Miiloo EPA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+  
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class"row"> 
+  <div class="col-md-12 jumbotron">
+      <h1>Miiloo EPA</h1><p>Energy Price Analysis - See our <a href="/miiloos/">API</a></p>
+  </div>
+  </div>
+  <div class="row">
+    {% load static %}
+    <script src="{% static "graphs/graphs.js" %}"></script>
+    <div class="col-md-6 col-sm-12 col-xs-12">
+      <h3>COMED 5 Minutes Feed</h3>
+      <div id="graph-1"></div>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12">
+      <h3>Random Sequence</h3>
+      <div id="graph-2"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
