@@ -2,13 +2,12 @@ from graphs.models import ComedFiveMinFeed
 
 import datetime
 import requests as r
-import json
 
 def getComedFiveMinFeed():
     url_comed = 'https://rrtp.comed.com/api?type=5minutefeed'
 
     result = r.get(url_comed)
-    prices = json.loads(result.content)
+    prices = result.json()
 
     for instance in prices:
         millisUTC = instance['millisUTC']
